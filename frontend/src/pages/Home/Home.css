@@ -1,0 +1,10 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 300vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/karl.png');
+  background-size: cover; /* Show full image */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}

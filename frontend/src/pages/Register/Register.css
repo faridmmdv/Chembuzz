@@ -1,0 +1,137 @@
+.register-white-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #e3f1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease;
+  z-index: 10;
+}
+
+.back-arrow:hover {
+  background-color: #f0f0f0;
+}
+
+.register-box {
+  background-color: white;
+  padding: 36px 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* 🔽 Reduced from 480px */
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
+.register-box h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.register-box p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.register-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 🔽 reduced from 15px */
+  text-align: left;
+}
+
+
+.register-box input,
+.register-box select,
+.register-box textarea,
+.register-box input[type="date"] {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #fff;
+}
+
+.register-box input:focus,
+.register-box select:focus,
+.register-box textarea:focus,
+.register-box input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.register-box button {
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-box button:hover {
+  background-color: #0056b3;
+}
+
+.upload-label {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+.error-msg {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.register-meta {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.register-meta a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-meta a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
