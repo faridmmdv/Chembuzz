@@ -34,11 +34,10 @@
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* 🔽 Reduced from 480px */
+  max-width: 400px;
   text-align: center;
   animation: fadeIn 0.6s ease-in-out;
 }
-
 
 .register-box h2 {
   font-size: 28px;
@@ -55,10 +54,9 @@
 .register-box form {
   display: flex;
   flex-direction: column;
-  gap: 12px; /* 🔽 reduced from 15px */
+  gap: 12px;
   text-align: left;
 }
-
 
 .register-box input,
 .register-box select,
@@ -133,5 +131,189 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.interest-card {
+  padding: 10px 18px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  background-color: white;
+}
+
+.interest-card.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.continue-btn {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.continue-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.skip-btn {
+  margin-top: 20px;
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.random-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto 32px auto;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.random-result-card-grid {
+  background: #fff;
+  box-shadow: 0 6px 26px rgba(23,133,182,0.10);
+  border-radius: 18px;
+  padding: 28px 22px 22px 22px;
+  min-width: 0;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.94) translateY(38px);
+  animation: popFadeIn 0.67s cubic-bezier(.41,1.22,.5,1.03) forwards;
+  margin-bottom: 0;
+  transition: box-shadow 0.22s;
+}
+.random-result-card-grid img {
+  width: 112px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: #e3f1f2;
+}
+.random-details-grid {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+.random-details-grid h4 {
+  margin: 0 0 8px 0;
+  color: #192439;
+  font-size: 19px;
+  font-weight: 700;
+  min-height: 44px;
+  word-break: break-word;
+}
+.random-details-grid p {
+  margin: 0 0 11px 0;
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 18px;
+  word-break: break-word;
+}
+.category-label {
+  display: inline-block;
+  background: #e3f1f2;
+  color: #1785b6;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 4px 14px;
+  letter-spacing: 0.4px;
+}
+
+@keyframes popFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.explore-more-line {
+  font-size: 21px;
+  margin-top: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #20294c;
+  justify-content: center;
+}
+.chembuzz-glow {
+  font-weight: 800;
+  font-size: 24px;
+  background: linear-gradient(90deg, #1785b6, #3ad176 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 16px rgba(23,133,182,0.12);
+}
+
+/* Responsive: 2 columns for tablet, 1 for mobile */
+@media (max-width: 1020px) {
+  .random-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 99vw;
+  }
+}
+@media (max-width: 700px) {
+  .random-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 97vw;
+  }
+  .random-result-card-grid {
+    max-width: 97vw;
+    padding: 14px 6px 18px 6px;
   }
 }

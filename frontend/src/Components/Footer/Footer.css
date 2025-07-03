@@ -1,32 +1,90 @@
 .footer {
-  background-color: #e3f1f2;
-  color: #333;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-  margin-top: auto;
+  background: #111827;
+  color: white;
+  padding: 3rem 0 2rem;
 }
-
-.footer-content {
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 640px) { .footer-container { padding: 0 1.5rem; } }
+@media (min-width: 1024px) { .footer-container { padding: 0 2rem; } }
+.footer-brand {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.brand-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #f97316;
+}
+.brand-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #f97316, #ea580c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+.brand-subtitle {
+  color: #f97316;
+  font-weight: 600;
+  font-size: 0.89rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.brand-description {
+  color: #9ca3af;
+  margin-bottom: 0;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 2rem;
+}
+.footer-bottom-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: 1rem;
 }
-
-.footer-links {
+@media (min-width: 768px) {
+  .footer-bottom-content {
+    flex-direction: row;
+  }
+}
+.copyright {
+  color: #9ca3af;
+  font-size: 0.88rem;
+  margin: 0;
+}
+.made-with {
+  color: #9ca3af;
+  font-size: 0.88rem;
   display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
 }
-
-.footer-links a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
+.heart-icon {
+  color: #ef4444;
+  animation: pulse 2s infinite;
 }
-
-.footer-links a:hover {
-  color: #007bff;
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
