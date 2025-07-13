@@ -26,7 +26,7 @@ The project demonstrates best practices in modern web development using Django R
 
 **Name:** Farid Mammadov  
 **Study Course:** Web Engineering  
-**Matriculation Number:** 762696
+
 
 Backend dependencies:
 Go to the backend/ folder and install all required Python libraries:
