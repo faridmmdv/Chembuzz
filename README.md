@@ -1,4 +1,5 @@
---this is a university project 
+--this is a university project
+Chemnitz, European Capital of Culture
 
 Datenbanken und Web-Techniken 
 Project Task Summer Semester 2025
