@@ -1,8 +1,5 @@
---this is a university project
-Chemnitz, European Capital of Culture
 
-Datenbanken und Web-Techniken 
-Project Task Summer Semester 2025
+Chemnitz, European Capital of Culture
 
 # Overview
 ChemBuzz is a full-stack web application that allows users to explore the cultural sites of Chemnitz, the European Capital of Culture 2025. The app features an interactive map, user profiles, favorite places, a shop for city merchandise, and a real-time leaderboard.
