@@ -86,9 +86,16 @@ const UpdateProfile = () => {
             <input name="name" value={formData.name} onChange={handleChange} />
           </div>
           <div className="item">
-            <label htmlFor="email">Email:</label>
-            <input name="email" value={formData.email} onChange={handleChange} />
-          </div>
+               <label htmlFor="email">Email:</label>
+                  <input
+        name="email"
+    value={formData.email}
+    readOnly
+    style={{ background: "#f6f6f6", color: "#999", cursor: "not-allowed" }}
+    tabIndex={-1}
+  />
+</div>
+
           <div className="item">
             <label htmlFor="country">Country:</label>
             <input name="country" value={formData.country} onChange={handleChange} />
