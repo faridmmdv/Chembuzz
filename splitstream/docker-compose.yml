@@ -26,6 +26,7 @@ services:
       - POSTGRES_PASSWORD=splitstream_pass
       - POSTGRES_HOST=db
       - POSTGRES_PORT=5432
+      - DJANGO_SECRET_KEY=docker-dev-secret-key-change-for-real-deployment
 
 volumes:
   postgres_data:
